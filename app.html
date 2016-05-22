@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экзамен по курсу</title>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="startApp()">
+
+<h1>Таблица 1 – общая статистика</h1>
+<table border="1">
+    <tbody>
+    <tr>
+        <td>общая сумма заказов</td>
+        <td id="total-sum"></td>
+    </tr>
+    <tr>
+        <td>общее число заказов</td>
+        <td id="total-orders"></td>
+    </tr>
+    <tr>
+        <td>общая сумма рекомендованных продаж</td>
+        <td id="total-recommended"></td>
+    </tr>
+    <tr>
+        <td>общая сумма не рекомендованных продаж</td>
+        <td id="total-typical"></td>
+    </tr>
+    <tr>
+        <td>общее число покупателей</td>
+        <td id="total-customers"></td>
+    </tr>
+    <tr>
+        <td>количество заказов, в которых нет рекомендованных продаж</td>
+        <td id="total-without-recommended"></td>
+    </tr>
+    <tr>
+        <td>количество заказов, в которых только рекомендованные продажи</td>
+        <td id="total-without-typical"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Таблица 2 – статистика с 26 по 28 (включительно) июня 2015 год</h1>
+
+<table border="1">
+    <tbody>
+    <tr>
+        <td>сумма продаж за период</td>
+        <td id="total-sum-within-period"></td>
+    </tr>
+    <tr>
+        <td>количество продаж за период</td>
+        <td id="total-orders-within-period"></td>
+    </tr>
+    <tr>
+        <td>покупателей за период</td>
+        <td id="total-customers-within-period"></td>
+    </tr>
+    <tr>
+        <td>количество рекомендованных продаж за период</td>
+        <td id="total-recommended-within-period"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Таблица 3 – самые дорогие заказы</h1>
+
+<table border="1" id="most-expensive">
+    <thead>
+        <tr>
+            <th>Дата</th>
+            <th>№ заказа</th>
+            <th>ID покупателя</th>
+            <th>Общая сумма</th>
+            <th>Обычные продажи</th>
+            <th>Рекомендованные продажи</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+</table>
+
+<h1>Таблица 4 – постоянные покупатели</h1>
+
+<table border="1" id="frequent-customers">
+    <thead>
+    <tr>
+        <th>Покупатель</th>
+        <th>Заказов</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+<h1>Блок 5 –  поиск заказов по покупателю</h1>
+<p>
+    <input type="text" placeholder="ID покупателя" id="customer-id">
+    <button onclick="fillTable5()">Показать заказы</button>
+</p>
+<table border="1" id="customer-by-id">
+    <thead>
+    <tr>
+        <th>Дата</th>
+        <th>№ заказа</th>
+        <th>Общая сумма</th>
+        <th>Обычные продажи</th>
+        <th>Рекомендованные продажи</th>
+    </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+</body>
+</html>
